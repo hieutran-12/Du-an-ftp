@@ -106,4 +106,7 @@ const submitForm = async () => {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+.fill-height {
+  background-image: linear-gradient(to right, #cdcdcd, #ec1616);
+}
 </style>

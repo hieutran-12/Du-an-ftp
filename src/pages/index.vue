@@ -1,11 +1,13 @@
 <template>
   <SubmitApplication />
+  <Status />
 </template>
 
 <script setup>
 //import { useRouter } from "vue-router";
 import { onMounted } from "vue";
 import SubmitApplication from "./SubmitApplication.vue";
+import Status from "./Status.vue";
 const router = useRouter();
 
 onMounted(() => {
@@ -15,3 +17,4 @@ onMounted(() => {
   }
 });
 </script>
+<style scoped></style>

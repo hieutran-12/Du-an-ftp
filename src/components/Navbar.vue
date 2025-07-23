@@ -3,7 +3,7 @@ import HoverMenu from "./HoverMenu.vue";
 </script>
 
 <template>
-  <v-app-bar color="#1976d2" dark flat height="60" style="overflow: visible">
+  <v-app-bar app color="#1976d2" dark flat style="overflow: visible">
     <!-- Logo và tiêu đề -->
     <v-toolbar-title class="d-flex align-center">
       <v-icon class="mr-2" size="24">mdi-office-building</v-icon>
@@ -16,33 +16,13 @@ import HoverMenu from "./HoverMenu.vue";
     <div class="d-flex align-center">
       <router-link to="/Status">
         <!-- Trang chủ -->
-        <HoverMenu title="Trang chủ" class="menu-btn">
-          <v-list class="pa-2" min-width="200">
-            <v-list-item link>
-              <v-list-item-title>Trang chủ</v-list-item-title>
-            </v-list-item>
-            <v-list-item link>
-              <v-list-item-title>Thống kê tổng quan</v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </HoverMenu>
+        <HoverMenu title="Trang chủ" class="menu-btn" />
       </router-link>
 
       <!-- Giới thiệu -->
-      <HoverMenu title="Giới thiệu" class="menu-btn">
-        <v-list class="pa-2" min-width="220">
-          <v-list-item link>
-            <v-list-item-title>Về chúng tôi</v-list-item-title>
-          </v-list-item>
-          <v-list-item link>
-            <v-list-item-title>Sứ mệnh - Tầm nhìn</v-list-item-title>
-          </v-list-item>
-          <v-list-item link>
-            <v-list-item-title>Lịch sử phát triển</v-list-item-title>
-          </v-list-item>
-        </v-list>
-      </HoverMenu>
-
+      <router-link to="/Introduce">
+        <HoverMenu title="Giới thiệu" class="menu-btn" />
+      </router-link>
       <!-- Dịch vụ công -->
       <HoverMenu title="Dịch vụ công" class="menu-btn">
         <v-list class="pa-2" min-width="250">
@@ -66,9 +46,6 @@ import HoverMenu from "./HoverMenu.vue";
         <v-list class="pa-2" min-width="200">
           <v-list-item link>
             <v-list-item-title>Hướng dẫn sử dụng</v-list-item-title>
-          </v-list-item>
-          <v-list-item link>
-            <v-list-item-title>Câu hỏi thường gặp</v-list-item-title>
           </v-list-item>
           <v-list-item link>
             <v-list-item-title>Liên hệ</v-list-item-title>
@@ -95,7 +72,14 @@ import HoverMenu from "./HoverMenu.vue";
       <HoverMenu title="Văn bản pháp luật" class="menu-btn">
         <v-list class="pa-2" min-width="220">
           <v-list-item link>
-            <v-list-item-title>Luật Doanh nghiệp</v-list-item-title>
+            <v-list-item-title>
+              <a
+                href="https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-Doanh-nghiep-so-59-2020-QH14-427301.aspx"
+                target="_blank"
+              >
+                Luật Doanh nghiệp</a
+              ></v-list-item-title
+            >
           </v-list-item>
           <v-list-item link>
             <v-list-item-title>Nghị định hướng dẫn</v-list-item-title>
@@ -187,6 +171,10 @@ export default {
 
 .text-blue {
   color: #1976d2 !important;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 
 /* Animation cho hover effect */
