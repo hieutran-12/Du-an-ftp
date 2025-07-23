@@ -6,7 +6,7 @@ import HoverMenu from "./HoverMenu.vue";
   <v-app-bar app color="#1976d2" dark flat style="overflow: visible">
     <!-- Logo và tiêu đề -->
     <v-toolbar-title class="d-flex align-center">
-      <v-icon class="mr-2" size="24">mdi-office-building</v-icon>
+      <v-icon class="mr-2">mdi-office-building</v-icon>
       <span class="font-weight-bold text-h6">ĐĂNG KÝ DOANH NGHIỆP</span>
     </v-toolbar-title>
 
@@ -14,7 +14,7 @@ import HoverMenu from "./HoverMenu.vue";
 
     <!-- Menu chính -->
     <div class="d-flex align-center">
-      <router-link to="/Status">
+      <router-link to="/SubmitResponse">
         <!-- Trang chủ -->
         <HoverMenu title="Trang chủ" class="menu-btn" />
       </router-link>
@@ -26,18 +26,24 @@ import HoverMenu from "./HoverMenu.vue";
       <!-- Dịch vụ công -->
       <HoverMenu title="Dịch vụ công" class="menu-btn">
         <v-list class="pa-2" min-width="250">
-          <v-list-item link>
-            <v-list-item-title>Đăng ký doanh nghiệp</v-list-item-title>
-          </v-list-item>
-          <v-list-item link>
-            <v-list-item-title>Thay đổi đăng ký</v-list-item-title>
-          </v-list-item>
+          <router-link to="/SubmitApplication">
+            <v-list-item link>
+              <v-list-item-title>Đăng ký doanh nghiệp</v-list-item-title>
+            </v-list-item>
+          </router-link>
+          <router-link to="/Status">
+            <v-list-item link>
+              <v-list-item-title>Xem trạng thái</v-list-item-title>
+            </v-list-item>
+          </router-link>
           <v-list-item link>
             <v-list-item-title>Giải thể doanh nghiệp</v-list-item-title>
           </v-list-item>
-          <v-list-item link>
-            <v-list-item-title>Tạm ngừng hoạt động</v-list-item-title>
-          </v-list-item>
+          <router-link to="NotFound">
+            <v-list-item link>
+              <v-list-item-title>Tạm ngừng hoạt động</v-list-item-title>
+            </v-list-item>
+          </router-link>
         </v-list>
       </HoverMenu>
 
@@ -94,33 +100,35 @@ import HoverMenu from "./HoverMenu.vue";
     <!-- Tìm kiếm và đăng nhập -->
     <v-spacer />
 
-    <div
-      class="d-flex align-center"
-      style="gap: 8px; flex-shrink: 0; min-width: 400px"
-    >
-      <!-- Ô tìm kiếm -->
-      <v-text-field
-        v-model="searchText"
-        placeholder="Tìm kiếm..."
-        prepend-inner-icon="mdi-magnify"
-        variant="outlined"
-        density="compact"
-        hide-details
-        class="search-field"
-        style="width: 200px; flex-shrink: 0"
-      />
-
-      <!-- Đăng nhập -->
-      <v-btn
-        variant="outlined"
-        color="white"
-        class="text-white"
-        size="small"
-        style="min-width: 85px; flex-shrink: 0; height: 32px"
+    <router-link to="/login">
+      <div
+        class="d-flex align-center"
+        style="gap: 8px; flex-shrink: 0; min-width: 400px"
       >
-        ĐĂNG XUẤT
-      </v-btn>
-    </div>
+        <!-- Ô tìm kiếm -->
+        <v-text-field
+          v-model="searchText"
+          placeholder="Tìm kiếm..."
+          prepend-inner-icon="mdi-magnify"
+          variant="outlined"
+          density="compact"
+          hide-details
+          class="search-field"
+          style="width: 200px; flex-shrink: 0"
+        />
+
+        <!-- Đăng nhập -->
+        <v-btn
+          variant="outlined"
+          color="white"
+          class="text-white"
+          size="small"
+          style="min-width: 85px; flex-shrink: 0; height: 32px"
+        >
+          ĐĂNG XUẤT
+        </v-btn>
+      </div>
+    </router-link>
   </v-app-bar>
 </template>
 

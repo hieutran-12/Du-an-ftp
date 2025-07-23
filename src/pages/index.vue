@@ -1,5 +1,4 @@
 <template>
-  <SubmitApplication />
   <Status />
 </template>
 

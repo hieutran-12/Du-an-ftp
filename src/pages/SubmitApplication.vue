@@ -107,6 +107,12 @@ const submitForm = async () => {
   background-clip: text;
 }
 .fill-height {
-  background-image: linear-gradient(to right, #cdcdcd, #ec1616);
+  background-image: url(https://cdn.vietnambiz.vn/2019/7/31/photo-1-1564540819481268352897.jpg);
+  background-size: cover;
+}
+.v-form {
+}
+.v-card {
+  background: linear-gradient(rgba(222, 222, 222, 0.7));
 }
 </style>
