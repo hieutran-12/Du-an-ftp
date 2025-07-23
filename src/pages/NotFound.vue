@@ -176,31 +176,31 @@ export default {
           id: 1,
           title: "Dịch vụ thông tin",
           icon: "mdi-information",
-          iconColor: "#00ACC1", // Cyan
+          iconColor: "#1976D2", // Blue
         },
         {
           id: 2,
           title: "Đăng ký doanh nghiệp",
           icon: "mdi-clipboard-text",
-          iconColor: "#4CAF50", // Green
+          iconColor: "#00ACC1", // Cyan
         },
         {
           id: 3,
           title: "Bộ cáo điện tử",
           icon: "mdi-email-open",
-          iconColor: "#FF7043", // Deep Orange
+          iconColor: "#0277BD", // Light Blue
         },
         {
           id: 4,
           title: "Đăng ký hộ kinh doanh",
           icon: "mdi-chart-line",
-          iconColor: "#AB47BC", // Purple
+          iconColor: "#26A69A", // Teal
         },
         {
           id: 5,
           title: "Đăng ký hợp tác xã",
           icon: "mdi-handshake",
-          iconColor: "#5C6BC0", // Indigo
+          iconColor: "#0288D1", // Light Blue Darken
         },
       ],
 
@@ -209,37 +209,37 @@ export default {
           id: 1,
           title: "Hướng dẫn sử dụng dịch vụ công",
           icon: "mdi-laptop",
-          gradient: "linear-gradient(135deg, #00ACC1 0%, #00BCD4 100%)", // Cyan gradient
+          gradient: "linear-gradient(135deg, #1976D2 0%, #2196F3 100%)", // Blue gradient
         },
         {
           id: 2,
           title: "Hướng dẫn đăng ký doanh nghiệp",
           icon: "mdi-file-document",
-          gradient: "linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%)", // Green gradient
+          gradient: "linear-gradient(135deg, #00ACC1 0%, #26C6DA 100%)", // Cyan gradient
         },
         {
           id: 3,
           title: "Tra cứu nhãn hiệu, chỉ dẫn địa lý được bảo hộ sở hữu trí tuệ",
           icon: "mdi-magnify",
-          gradient: "linear-gradient(135deg, #FF7043 0%, #FF8A65 100%)", // Orange gradient
+          gradient: "linear-gradient(135deg, #0277BD 0%, #039BE5 100%)", // Light Blue gradient
         },
         {
           id: 4,
           title: "Ngành nghề đầu tư kinh doanh có điều kiện",
           icon: "mdi-gavel",
-          gradient: "linear-gradient(135deg, #AB47BC 0%, #BA68C8 100%)", // Purple gradient
+          gradient: "linear-gradient(135deg, #26A69A 0%, #4DB6AC 100%)", // Teal gradient
         },
         {
           id: 5,
           title: "Điều kiện đầu tư kinh doanh đối với nhà đầu tư nước ngoài",
           icon: "mdi-earth",
-          gradient: "linear-gradient(135deg, #5C6BC0 0%, #7986CB 100%)", // Indigo gradient
+          gradient: "linear-gradient(135deg, #0288D1 0%, #29B6F6 100%)", // Light Blue Darken gradient
         },
         {
           id: 6,
           title: "Thông tin về quản tài viên",
           icon: "mdi-account-tie",
-          gradient: "linear-gradient(135deg, #26A69A 0%, #4DB6AC 100%)", // Teal gradient
+          gradient: "linear-gradient(135deg, #1565C0 0%, #1976D2 100%)", // Blue Darken gradient
         },
       ],
     };
@@ -271,16 +271,16 @@ export default {
 
 <style scoped>
 .gradient-bg {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  background: linear-gradient(135deg, #1976d2 0%, #2196f3 50%, #00bcd4 100%);
   min-height: 100vh;
 }
 
 .header-services {
   background: linear-gradient(
     90deg,
-    #667eea 0%,
-    #764ba2 50%,
-    #f093fb 100%
+    #1565c0 0%,
+    #1976d2 50%,
+    #2196f3 100%
   ) !important;
 }
 
@@ -322,13 +322,13 @@ export default {
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(0, 172, 193, 0.7);
+    box-shadow: 0 0 0 0 rgba(25, 118, 210, 0.7);
   }
   70% {
-    box-shadow: 0 0 0 10px rgba(0, 172, 193, 0);
+    box-shadow: 0 0 0 10px rgba(25, 118, 210, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(0, 172, 193, 0);
+    box-shadow: 0 0 0 0 rgba(25, 118, 210, 0);
   }
 }
 
